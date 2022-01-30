@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.neucal">
+    package="com.abhiram.minical">
             <uses-permission android:name="android.permission.VIBRATE"/>
 <queries>
   <!-- If your app opens https URLs -->
@@ -9,9 +9,9 @@
   </intent>
 </queries>
    <application
-        android:label="neucal"
+        android:label="Mini Calculator"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"

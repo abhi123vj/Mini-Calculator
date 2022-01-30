@@ -1,4 +1,4 @@
-package com.example.neucal
+package com.abhiram.minical
 
 import io.flutter.embedding.android.FlutterActivity
 

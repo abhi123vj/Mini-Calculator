@@ -69,7 +69,7 @@ class HomeScreen extends StatelessWidget {
             child:  Container(
               alignment: Alignment.center,
               color: Theme.of(context).backgroundColor,
-              child: FaIcon(
+              child: const FaIcon(
                 FontAwesomeIcons.alignLeft,
                 size: 20,
               ),
@@ -89,7 +89,7 @@ class HomeScreen extends StatelessWidget {
               
               alignment: Alignment.center,
               color: Theme.of(context).backgroundColor,
-              padding: EdgeInsets.only(right: 20),
+              padding: const EdgeInsets.only(right: 20),
                 child: FaIcon(
                   aceController.themeMod.value == Brightness.light
                       ? FontAwesomeIcons.moon

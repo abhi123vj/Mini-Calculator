@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:function_tree/function_tree.dart';
 import 'package:get/state_manager.dart';
@@ -124,9 +123,7 @@ class ButtonContoller extends GetxController {
             exp.add(s);
             clrdisp();
           }
-        } else {
-          print("elsee");
-        }
+        } 
       }
     } else {
       if (s == "pi") {
@@ -146,7 +143,6 @@ class ButtonContoller extends GetxController {
         valuetoDisp.value = valuetoDisp.value + s;
       }
     }
-    print("the sym  $s");
   }
 
   prvChkr(s) {
@@ -165,42 +161,28 @@ class ButtonContoller extends GetxController {
         .replaceAll("÷", "/")
         .replaceAll("\u00d7", "*");
 
-    print(exp
-        .toString()
-        .replaceAll('[', '')
-        .replaceAll(']', '')
-        .replaceAll(",", "")
-        .replaceAll("÷", "/"));
     if (s == "") s = "0";
-    try {
+  
       valuetoDisp.value =
           removeTrailingZerosAndNumberfy(s.interpret().toStringAsFixed(10))
               .toString();
       answershown = true;
-    } catch (e) {
-      print("String is $s and error = $s");
-    }
-    print(" the Ans  ${s} ");
+    
   }
 
   TextStyle? fontResize(context) {
     if (valuetoDisp.value.length < 13) {
-      print("Fnt 1");
       return Theme.of(context).textTheme.headline1;
     } else if (valuetoDisp.value.length < 16) {
-      print("Fnt 2");
 
       return Theme.of(context).textTheme.headline2;
     } else if (valuetoDisp.value.length < 20) {
-      print("Fnt 3");
 
       return Theme.of(context).textTheme.headline3;
     } else if (valuetoDisp.value.length < 24) {
-      print("Fnt 4");
 
       return Theme.of(context).textTheme.headline4;
     } else if (valuetoDisp.value.length < 30) {
-      print("Fnt 4");
 
       return Theme.of(context).textTheme.headline5;
     }
