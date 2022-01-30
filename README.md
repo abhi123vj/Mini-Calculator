@@ -1,5 +1,6 @@
-<img src="assets/xys.png?sanitize=true" alt="Mini Calculator logo" height="70" > ### Mini Calculator
+<img src="assets/xys.png?sanitize=true" alt="Mini Calculator logo" height="70" > 
  
+## Mini Calculator
 
 Simple Calculator App
 <p align="center">
