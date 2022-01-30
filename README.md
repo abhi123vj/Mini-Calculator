@@ -1,4 +1,5 @@
-# Traders Journal
+<img src="assets/xys.png?sanitize=true" alt="Mini Calculator logo" height="70" > ### Mini Calculator
+ 
 
 Simple Calculator App
 <p align="center">
@@ -6,7 +7,7 @@ Simple Calculator App
   <img src="https://github.com/abhi123vj/Mini-Calculator/blob/master/sceenshots/firstimh.png" alt="Sofia Cover" />
 
 </p>
-<img src="assets/xys.png?sanitize=true" alt="Mini Calculator logo" height="70" >
+
 
 
 Mini Calculator is a Simple Android calculator App made using Flutter. It includes all the basic operations and pi.
